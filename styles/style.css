@@ -1,97 +1,181 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import 'reset.css';
+@import 'variables.css';
+@import 'modals.css';
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Secciones */
+/* Header */
+.navbar {
+  border: solid 4px var(--main-color);
   margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  padding: 0.5rem;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.navbar-menu-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-body {
-  line-height: 1;
+.jumbo {
+  border: solid 4px var(--main-color);
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-html, body {
-  height: 100%;
+#jumbo-title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-tittle);
+  font-size: 4rem;
 }
 
-ol, ul {
-  list-style: none;
+
+/* Main */
+.main-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-blockquote, q {
-  quotes: none;
+.contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px var(--main-color);
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+#professional-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.menu-selector-container {
+  border: solid 2px var(--main-color);
+  border-radius: 4px;
+  width: 15%;
+  height: 20rem;
 }
 
-a,
-a:focus {
-  text-decoration: none;
-  color: var(--black);
+/* Botones que activan los modals */
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-a{
-  transition: all .3s;
-  color: var(--main-hov-color);
+
+#modal-button-skills {
+  display: none;
 }
 
-a:hover {
-  color: var(--black);
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+  border: solid 4px var(--main-color);
+  padding: 0.5rem;
+}
+
+/* Modals */
+.modal {
+  background-color: red;
+}
+
+#modal-cv,
+#modal-skills {
+  border: solid 4px var(--main-color);
+}
+
+#modal-skills {
+  display: none;
+}
+
+/*Contenedor de enlaces a proyectos*/
+
+#links-projects-title{
+  font-size:2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#projects-links {
+  margin-top: 2rem;
+}
+
+.link-li{
+  display: inline-block;
+  margin: 1.5rem 0 0 1rem;
+  text-align: left;
+}
+
+.skill-link {
+  margin: 2rem 0 0 0;
   font-size: 1.5rem;
+  color: inherit;
+  text-align: center;
 }
 
-i {
-  margin: 0 1rem;
-  color: var(--main-color);
+/* Responsive */
+@media (max-width: 900px) {
+
+  .menu-selector-container {
+    width: 30%;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
 }
 
-/* VARIABLES */
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&family=Rubik&display=swap');
+@media (max-width: 768px) {
+  #professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .menu-selector-container {
+    width: 80%;
+    height: 10rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
 
-:root {
-  --main-color: #0C6291;
-  --main-hov-color: #094D71;
-  --sec-color: #3A97E4;
-  --sec-hov-color: #1D84D7;
-  --main-bg-color: #DAF0FB;
-  --sec-bg-color: #B6E1F7;
-  --black: #000004;
-  --white: #FBFEF9;
-  --font1: 'Proza Libre', sans-serif;
-  --font2: 'Rubik', sans-serif;
+  #modal-button-cv {
+    padding: 1rem;
+  }
+
+  #projects-selector {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  #projects-links {
+    margin: 0 1rem 2.5rem 1rem;
+  }
   
+
+  .skill-link {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: inherit;
+    text-align: center;
+  }
+
 }

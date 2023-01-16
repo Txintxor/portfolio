@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&family=Rubik&display=swap');
+
+
+
+:root {
+  --main-color: #0C6291;
+  --main-hov-color: #094D71;
+  --sec-color: #3A97E4;
+  --sec-hov-color: #1D84D7;
+  --main-bg-color: #DAF0FB;
+  --sec-bg-color: #B6E1F7;
+  --black: #000004;
+  --white: #FBFEF9;
+  --font-title: 'Proza Libre', sans-serif;
+  --font: 'Rubik', sans-serif;
+  
+}
