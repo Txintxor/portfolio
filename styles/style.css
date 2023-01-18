@@ -15,7 +15,7 @@
   background: var(--main-color);
   height: 2rem;
   margin: 0;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 .navbar-menu-links {
@@ -34,7 +34,7 @@
   height: 30rem;
   border-radius: 4px;
   margin: 4rem 5rem;
-  padding: 0.5rem;
+  padding: .5rem;
   background-image: url("/img/jumbo-background.svg");
   -webkit-box-shadow: 5px 1px 10px 4px var(--main-color);
   box-shadow: 5px 1px 4px 4px var(--main-color);
@@ -62,9 +62,6 @@
   font-size: 3rem;
 }
 
-
-
-
 /* Main */
 .main-container {
   min-height: 100%;
@@ -79,7 +76,7 @@
   flex-direction: column;
   border: solid 4px var(--main-color);
   margin: 1rem;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 #professional-container {
@@ -101,12 +98,10 @@
 .menu-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: var(--white2);
   cursor: pointer;
-  background-color: var(--main-color);
 }
 
 #modal-button-skills {
@@ -115,11 +110,20 @@
 
 #modal-button-cv {
   background: none;
+  border: none;
 }
 
-#projects-selector {
-  color: var(--white2);
-  background-color: var(--main-color);
+.menu-button,
+.projects-selector {
+  color: var(--black);
+  font-family: var(--font);
+  font-weight: 700;
+  background-color: var(--white3);
+  border: 14px solid var(--main-color);
+}
+
+.skills-button-text{
+  padding: .5rem
 }
 
 /* Footer */
@@ -133,7 +137,7 @@
 }
 
 .footer-text {
-  padding: 0.75rem;
+  padding: .75rem;
   font-size: 1.25rem;
   color: var(--white2);
   text-shadow: 6px 8px 4px var(--main-color);
@@ -221,7 +225,7 @@
   }
 
   #jumbo-title {
-    margin: 0.15rem;
+    margin: .15rem;
     padding: 1rem;
     font-size: 2rem;
   }
