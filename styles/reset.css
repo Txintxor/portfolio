@@ -65,16 +65,14 @@ table {
 a,
 a:focus {
   text-decoration: none;
-  color: var(--black);
 }
 
-a{
+a {
   transition: all .3s;
-  color: var(--main-hov-color);
 }
 
 a:hover {
-  font-size: 1.05rem;
+  color: var(--hov-color)
 }
 
 i {
@@ -83,12 +81,13 @@ i {
 }
 
 a,
-p,
-button {
+p {
   font-family: var(--font);
+  color: var(--black);
 }
 
 button {
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -100,9 +99,3 @@ header, footer {
 main {
   flex-grow: 1;
 }
-
-header, main, footer {
-  flex-shrink: 0;
-}
-
-

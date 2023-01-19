@@ -27,6 +27,7 @@
 .navbar-icon {
   color: var(--white2);
   font-size: 32px;
+  cursor: pointer;
 }
 
 /* Jumbo */
@@ -44,7 +45,6 @@
   display: flex;
   flex-direction: column;
   margin: 3rem 0 0 2rem;
-  ;
   font-family: var(--font-title);
   font-size: 8rem;
   color: var(--grey);
@@ -85,45 +85,57 @@
   justify-content: space-evenly;
 }
 
-.menu-selector-container {
-  border: solid 2px var(--white2);
-  border-radius: 6px;
-  width: 15%;
-  height: 20rem;
-}
-
-
-
 /* Botones que activan los modals */
-.menu-button {
+.menu-button-container,
+.menu-links-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  width: 15%;
+  height: 20rem;
   font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);  
+  background-color: var(--white2);
+  border: 14px solid var(--white3);
+  outline: 14px solid var(--main-color);
+  border-radius: 4px;  
+  transition: all .4s;
+}
+
+.menu-button-container {
   cursor: pointer;
 }
 
-#modal-button-skills {
-  display: none;
+.menu-button-container:hover, 
+.menu-links-container:hover {
+  border: 10px solid var(--hov-color);
+  background-image: url("/img/jumbo-background-sm.svg");
+  background-size: cover;
 }
 
-#modal-button-cv {
-  background: none;
-  border: none;
-}
-
-.menu-button,
-.projects-selector {
-  color: var(--black);
-  font-family: var(--font);
-  font-weight: 700;
-  background-color: var(--white3);
-  border: 14px solid var(--main-color);
-}
-
-.skills-button-text{
+.button-text {
   padding: .5rem
+}
+
+/*Contenedor de enlaces a proyectos*/
+
+#links-projects-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -4rem;
+}
+
+.link-li {
+  display: inline-block;
+  margin: 1rem 0 0 2rem;
+}
+
+.skill-link {
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;  
+  text-align: center;
 }
 
 /* Footer */
@@ -158,47 +170,25 @@
   display: none;
 }
 
-/*Contenedor de enlaces a proyectos*/
-
-#links-projects-title {
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-#projects-links {
-  margin-top: 2rem;
-}
-
-.link-li {
-  display: inline-block;
-  margin: 1.5rem 0 0 1rem;
-  text-align: left;
-}
-
-.skill-link {
-  margin: 2rem 0 0 0;
-  font-size: 1.5rem;
-  color: inherit;
-  text-align: center;
-}
-
 /* Responsive */
 @media (max-width: 1280px) {
-  
+
   .jumbo {
     background-image: url("/img/jumbo-background-sm.svg");
   }
+
   #jumbo-title {
     margin: 3rem 1rem;
     padding: 1rem;
     font-size: 6rem;
   }
 
-  .menu-selector-container {
-    width: 30%;
-    border-radius: 4px;
+  .menu-button-container,
+  .menu-links-container {
+    width: 25%;
     margin: 1rem 0;
+    border: 8px solid var(--white3);
+    outline: 8px solid var(--main-color);
   }
 }
 
@@ -214,6 +204,15 @@
 
   .jumbo-text {
     font-size: 2rem;
+  }
+
+  #links-projects-title {
+    margin-top: 1rem;
+  }
+
+  .menu-button-container:hover {
+    border: none;
+    background-image: none;
   }
 }
 
@@ -237,17 +236,17 @@
   .jumbo-text {
     font-size: 1.2rem;
   }
-  
+
   #professional-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .menu-selector-container {
+  .menu-button-container, 
+  .menu-links-container {
     width: 80%;
     height: 10rem;
-    border-radius: 4px;
     margin: 1rem 0;
     font-size: 1.5rem;
   }
