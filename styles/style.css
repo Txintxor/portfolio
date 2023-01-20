@@ -7,6 +7,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
+  transition: all .3s;
 }
 
 /* Secciones */
@@ -91,24 +92,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 15%;
   height: 20rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--black);  
   background-color: var(--white2);
   border: 14px solid var(--white3);
   outline: 14px solid var(--main-color);
-  border-radius: 4px;  
+  border-radius: 4px;
   transition: all .4s;
+}
+
+.menu-links-container {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
 }
 
 .menu-button-container {
   cursor: pointer;
 }
 
-.menu-button-container:hover, 
+.menu-button-container:hover,
 .menu-links-container:hover {
   border: 10px solid var(--hov-color);
   background-image: url("/img/jumbo-background-sm.svg");
@@ -134,8 +138,45 @@
 
 .skill-link {
   margin: 2rem 0 0 0;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
   text-align: center;
+}
+
+/*Botones de los modals*/
+
+.menu-button-modal {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--black);
+  z-index: 5;
+}
+
+.button-text {
+  text-align: center;
+  line-height: 2;
+}
+
+/* Modals */
+.modal {
+  background-color: red;
+  width: fit-content;
+}
+
+#modal-cv,
+#modal-skills {
+  border: solid 4px var(--main-color);
+  display: none;
+}
+
+#modal-cv {
+  
+}
+
+#modal-skills {
+  
 }
 
 /* Footer */
@@ -154,20 +195,6 @@
   color: var(--white2);
   text-shadow: 6px 8px 4px var(--main-color);
   text-shadow: -1px 1px 1px var(--grey);
-}
-
-/* Modals */
-.modal {
-  background-color: red;
-}
-
-#modal-cv,
-#modal-skills {
-  border: solid 4px var(--main-color);
-}
-
-#modal-skills {
-  display: none;
 }
 
 /* Responsive */
@@ -210,6 +237,10 @@
     margin-top: 1rem;
   }
 
+  .menu-button-modal {
+    font-size: 1.75rem;
+  }
+
   .menu-button-container:hover {
     border: none;
     background-image: none;
@@ -243,17 +274,18 @@
     align-items: center;
   }
 
-  .menu-button-container, 
+  .menu-button-container,
   .menu-links-container {
     width: 80%;
-    height: 10rem;
+    height: 14rem;
     margin: 1rem 0;
     font-size: 1.5rem;
   }
 
-  #modal-button-cv {
-    padding: 1rem;
+  .menu-button-modal {
+    font-size: 1.85rem;
   }
+
 
   #projects-selector {
     height: fit-content;

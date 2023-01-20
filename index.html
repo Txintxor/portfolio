@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title>Alex Quintilla Portfolio</title>
-  <script src="https://kit.fontawesome.com/49b1fa1b69.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/49b1fa1b69.js" crossorigin="anonymous" async></script>
+
+
 </head>
 
 <body>
@@ -58,21 +60,19 @@
     <!-- Contenedor de los botones para los modals -->
     <main class="content">
       <!-- Botones de los modals -->
-      <section class="contents-menu" id="professional-container">
-
-        <!-- CV -->
+      <section class="contents-menu" id="professional-container"> <!-- CV -->
         <article class="menu-button-container" id="cv-selector">
-          <p class="button-text" id="cv">Curriculum</p>
           <button class="menu-button-modal" id="modal-button-cv">
+            Curriculum
           </button>
         </article>
 
         <!-- Skills -->
         <article class="menu-button-container" id="skills-selector">
-          <p class="button-text">Aptitudes</p>
-          <p class="button-text">Habilidades</p>
-          <p class="button-text">Conocimientos</p>
           <button class="menu-button-modal" id="modal-button-skills">
+            <span class="button-text">Aptitudes </span>
+            <span class="button-text">Habilidades</span>
+            <span class="button-text">Conocimientos</span>
           </button>
         </article>
 
@@ -101,26 +101,28 @@
         </article>
       </section>
 
-      <!-- Modals -->
-      <!-- CV -->
-      <article class="modal" id="modal-cv">
-        <img id="modal-img-cv" alt="CV-image" src="./img/AlexQuintillaValleCV2023.jpg" width="50%" height="50%">
-      </article>
-      <!-- Skills -->
-      <article class="modal" id="modal-skills">
-        <p id="modal-skills-text">
 
-        </p>
-      </article>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <article class="footer-container">
-        <p class="footer-text">Alex Quintillà Valle 2023</p>
-      </article>
-    </footer>
+      <!-- Footer -->
+      <footer>
+        <article class="footer-container">
+          <p class="footer-text">Alex Quintillà Valle 2023</p>
+        </article>
+      </footer>
   </div>
+  <!-- Modals -->
+  <!-- CV -->
+  <article class="modal" id="modal-cv">
+
+    <img id="modal-img-cv" alt="CV-image" src="./img/AlexQuintillaValleCV2023.jpg" width="50%" height="50%">
+  </article>
+  <!-- Skills -->
+  <article class="modal" id="modal-skills">
+    <p id="modal-skills-text">
+
+    </p>
+  </article>
+  </main>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
