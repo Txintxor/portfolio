@@ -1,6 +1,6 @@
 @import 'reset.css';
 @import 'variables.css';
-@import 'modals.css';
+/* @import 'modals.css'; */
 
 
 /* Main Container */
@@ -160,23 +160,22 @@
 }
 
 /* Modals */
-.modal {
-  background-color: red;
-  width: fit-content;
-}
 
 #modal-cv,
 #modal-skills {
-  border: solid 4px var(--main-color);
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-#modal-cv {
-  
-}
-
-#modal-skills {
-  
+#modal-img-cv {
+  border: solid 4px var(--white3);
+  max-height: 95%;
+  margin-top: 1.5rem;
 }
 
 /* Footer */
