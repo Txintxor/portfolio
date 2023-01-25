@@ -257,6 +257,7 @@ footer {
 #modal-skills-text {
   left: 20%;
   font-size: 1.5rem;
+  line-height: normal;
 }
 
 @media (max-width: 900px) {
@@ -369,6 +370,7 @@ footer {
     left: 2.5%;
     font-size: 1rem;
     padding: .85rem;
+    
   }
 
   #modal-img-cv {
