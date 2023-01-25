@@ -7,6 +7,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition: all .3s;
 }
 
@@ -15,7 +16,6 @@
 .navbar {
   background: var(--main-color);
   height: 2rem;
-  margin: 0;
   padding: .5rem;
 }
 
@@ -32,11 +32,21 @@
 }
 
 /* Jumbo */
+.jumbo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
 .jumbo {
-  height: 30rem;
+  height: 23.5rem;
+  width: 88%;
   border-radius: 4px;
-  margin: 4rem 5rem;
+  margin: 2rem 4rem;
   padding: .5rem;
+  background: cover;
   background-image: url("/img/jumbo-background.svg");
   -webkit-box-shadow: 5px 1px 10px 4px var(--main-color);
   box-shadow: 5px 1px 4px 4px var(--main-color);
@@ -45,16 +55,11 @@
 #jumbo-title {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0 0 2rem;
   font-family: var(--font-title);
-  font-size: 8rem;
+  font-size: 5rem;
   color: var(--grey);
   text-shadow: 6px 8px 4px var(--white2);
   text-shadow: -3px 2px 2px var(--white2);
-}
-
-.jumbo-text-container {
-  margin: 2rem 0 0 2rem;
 }
 
 .jumbo-text {
@@ -69,6 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: space-between;
 }
 
 .contents {
@@ -76,7 +82,6 @@
   display: flex;
   flex-direction: column;
   border: solid 4px var(--main-color);
-  margin: 1rem;
   padding: .5rem;
 }
 
@@ -94,15 +99,17 @@
   justify-content: center;
   align-items: center;
   width: 15%;
-  height: 20rem;
+  height: 13rem;
+  padding: 1rem;
   background-color: var(--white2);
-  border: 14px solid var(--white3);
-  outline: 14px solid var(--main-color);
+  border: 8px solid var(--white3);
+  outline: 8px solid var(--main-color);
   border-radius: 4px;
   transition: all .4s;
 }
 
 .menu-links-container {
+  height: 100%;
   font-size: 2rem;
   font-weight: 700;
   color: var(--black);
@@ -128,7 +135,6 @@
 #links-projects-title {
   font-size: 2rem;
   text-align: center;
-  margin-top: -4rem;
 }
 
 .link-li {
@@ -145,13 +151,10 @@
 /*Botones de los modals*/
 
 .menu-button-modal {
-  width: 100%;
-  height: 100%;
   font-family: var(--font);
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--black);
-  z-index: 5;
 }
 
 .button-text {
@@ -178,14 +181,35 @@
   margin-top: 1.5rem;
 }
 
+#modal-skills-text {
+  position: relative;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: fit-content;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 2.5rem;
+  padding: 4rem;
+  border: solid 4px var(--white3);
+  background-color: var(--white2);
+
+}
+
 /* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: auto;
   background: var(--main-color);
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .footer-text {
@@ -200,7 +224,9 @@
 @media (max-width: 1280px) {
 
   .jumbo {
+    height: 100%;
     background-image: url("/img/jumbo-background-sm.svg");
+    background-size: cover;
   }
 
   #jumbo-title {
@@ -220,36 +246,60 @@
 
 @media (max-width: 900px) {
 
-  .jumbo {
-    background-size: cover;
-  }
-
   #jumbo-title {
     font-size: 4.25rem;
+    margin-bottom: 1rem;
+    ;
   }
 
   .jumbo-text {
     font-size: 2rem;
   }
 
-  #links-projects-title {
-    margin-top: 1rem;
+  .menu-container {
+    margin: 2rem 1rem;
+    height: 20rem;
   }
 
-  .menu-button-modal {
-    font-size: 1.75rem;
-  }
-
-  .menu-button-container:hover {
+  .menu-container:hover {
     border: none;
     background-image: none;
   }
+
+  .menu-button-modal {
+    font-size: 2rem;
+  }
+
+  #links-projects-title {
+    margin-top: 0;
+  }
+
+  .skill-link {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+  #modal-img-cv {
+    margin-top: .5rem;
+  }
+
+  #modal-skills-text {
+    left: 20%;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+
 }
 
 @media (max-width: 768px) {
   .jumbo {
     height: 20rem;
-    margin: 4rem 1.25rem;
+    margin: .25rem 1.25rem;
+    background-image: url("/img/jumbo-background-smart.svg");
     background-size: cover;
   }
 
@@ -260,11 +310,11 @@
   }
 
   .jumbo-text-container {
-    margin: 3rem 0 0 1rem;
+    margin: 1rem 0 0 1rem;
   }
 
   .jumbo-text {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   #professional-container {
@@ -276,7 +326,7 @@
   .menu-button-container,
   .menu-links-container {
     width: 80%;
-    height: 14rem;
+    height: 100%;
     margin: 1rem 0;
     font-size: 1.5rem;
   }
@@ -288,7 +338,6 @@
 
   #projects-selector {
     height: fit-content;
-    margin-bottom: 2rem;
   }
 
   #projects-links {
@@ -301,4 +350,20 @@
     font-size: 1.25rem;
   }
 
+  #modal-skills-text {
+    width: 85%;
+    left: 2.5%;
+    font-size: 1rem;
+    padding: .85rem;
+  }
+
+  #modal-img-cv {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
 }
