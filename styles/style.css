@@ -22,9 +22,20 @@
 .navbar-menu-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
 }
 
+#main-language:hover,
+.navbar-icon:hover {
+  color: var(--white3);
+}
+
+#main-language {
+  font-size: 1.5rem;
+  color: var(--white2);
+  margin: 1rem;
+}
 .navbar-icon {
   color: var(--white2);
   font-size: 32px;
@@ -243,6 +254,10 @@ footer {
     outline: 8px solid var(--main-color);
   }
 }
+#modal-skills-text {
+  left: 20%;
+  font-size: 1.5rem;
+}
 
 @media (max-width: 900px) {
 
@@ -292,7 +307,6 @@ footer {
     position: fixed;
     bottom: 0;
   }
-
 }
 
 @media (max-width: 768px) {

@@ -5,54 +5,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title>Alex Quintilla Portfolio</title>
+  <script src="https://kit.fontawesome.com/49b1fa1b69.js" crossorigin="anonymous" async></script>
+
+
 </head>
 
 <body>
-  <div class="body-container">
+  <div class="main-container">
+    <!-- Cabecera -->
     <header class="header-container">
+      <!-- Barra de navegación -->
       <nav class="navbar">
-        <ul class="navbar-menu">
-          <li class="navbar-list"><a  id="main-language" class="navbar-link"></a></li>
-          <li class="navbar-list"><a href="#main-skills" id="main-skills" class="navbar-link"></a></li>
-          <li class="navbar-list"><a href="mailto: alexqv@gmail.com" id="main-contact" class="navbar-link"></a></li>
+        <ul class="navbar-menu-links">
+          <li class="navbar-list"><a id="main-language" class="navbar-link" href="./">Home</a></li>
+          <li class="navbar-list">
+            <a href="mailto: alexqv@gmail.com" id="main-contact" class="navbar-link"></a>
+            <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
+          </li>
+          <li class="navbar-list">
+            <a href="https://www.linkedin.com/in/alex-quintilla/" target="_blank">
+              <i class="fa-brands fa-linkedin navbar-icon"></i>
+            </a>
+          </li>
         </ul>
       </nav>
-      <section class="jumbo">
-        <p id="jumbo-main-title">
-          Alex Quintilla Valle
-        </p>
-        <p id="jumbo-text">
-          Front End Developer
-        </p>
-      </section>
+      <!-- Panel Jumbo -->
+      <div class="jumbo-container">
+        <section class="jumbo">
+          <p id="jumbo-title">
+            Alex Quintillà Valle
+          </p>
+          <article class="jumbo-text-container">
+            <p class="jumbo-text">
+              Front End Developer
+            </p>
+            <ul class="jumbo-list">
+              <li class="jumbo-li">
+                </span>
+                <p class="jumbo-text"> <span><i class="fa fa-arrow-right-long"></i>HTML CSS Bootstrap SASS</p>
+              </li>
+              <li class="jumbo-li">
+                </span>
+                <p class="jumbo-text"> <span><i class="fa fa-arrow-right-long"></i>Javascript ReactJS TypeScript </p>
+              </li>
+              <li class="jumbo-li">
+                </span>
+                <p class="jumbo-text"> <span><i class="fa fa-arrow-right-long"></i>Git npm</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="invi"></section>
+      </div>
     </header>
-
-    <main class="main-container">
-      <section class="main-section" id="content-grid">
-        <article class="main-section-article" id="main-cv"><button class="modal-button" id="modal-button1"></button>
+    <!-- Contenedor de los botones para los modals -->
+    <main class="content">
+      <!-- Botones de los modals -->
+      <section class="contents-menu" id="professional-container"> <!-- CV -->
+        <article class="menu-button-container menu-container" id="cv-selector">
+          <button class="menu-button-modal" id="modal-button-cv">
+            Curriculum
+          </button>
         </article>
-        <article class="main-section-article" id="main-skils"><p class="main-text" id="skills-text">
-          
-        </p><button class="modal-button" id="modal-button2"></button>
-        </article>
-        <article class="main-section-article" id="main-projects"><button class="modal-button"
-            id="modal-button3"></button></article>
-      </section>
-      <section class="modal-container">
-        <div class="modal" id="modal-1"></div>
-        <div class="modal" id="modal-2"></div>
-        <div class="modal" id="modal-3"></div>
-      </section>
-    </main>
 
-    <footer class="footer-content">
-      <ul class="footer-menu">
-        <li class="footer-list"></li>
-      </ul>
-    </footer>
+        <!-- Skills -->
+        <article class="menu-button-container menu-container" id="skills-selector">
+          <button class="menu-button-modal" id="modal-button-skills">
+            About me
+          </button>
+        </article>
+
+        <!-- Proyectos -->
+        <article class="menu-links-container menu-container" id="projects-selector">
+          <p class="title" id="links-projects-title">Links</p>
+          <article class="link-container" id="projects-links">
+            <ul class="link-list-container">
+              <li class="link-li">
+                <a href="https://github.com/Txintxor" target="_blank" class="skill-link">
+                  GitHub
+                </a>
+              </li>
+              <li class="link-li"><a href="https://rosber-beta.vercel.app/Login" target="_blank" class="skill-link">
+                  Kitchen manager WebApp
+                </a>
+              </li>
+              <li class="link-li"><a href="https://www.linkedin.com/in/alex-quintilla/" target="_blank"
+                  class="skill-link">
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </article>
+
+        </article>
+      </section>
+
+
+      <!-- Footer -->
+      <footer>
+        <article class="footer-container">
+          <p class="footer-text">Alex Quintillà Valle 2023</p>
+        </article>
+      </footer>
   </div>
+  </main>
+
+  <!-- Modals -->
+  <!-- CV -->
+  <article class="modal" id="modal-cv">
+    <img id="modal-img-cv" alt="CV-image" src="./img/AlexQuintillaValleCV2023English.jpg">
+  </article>
+  <!-- Skills -->
+  <article class="modal" id="modal-skills">
+    <p id="modal-skills-text">
+      My name is Alex Quintilla, a 20 year experienced professional chef who is starting a new career
+      in programming and in front end developing in particular.
+      <br>
+      From my long career as professional chef I got a lot of strengths as discipline, resilience and 
+      an open mind to embrace changes and new knowledges.
+      <br>
+      I self-taught HTML, CSS, Javascript, TypeScript, frameworks as Bootstrap y SASS, Git and npm, etc and 
+      then, thanks to IT Academy from Barcelona Activa, I´ve learned that ReactJS is a powerfull tool not
+      only for front end but also to created unique apps as the Kitchen operative manager I´m developing
+      nowadays
+      <br>
+      I´m starting my career with great enthusiasm and I´m working hard to build a strong 
+      knowledge of the language, frameworks and libraries and in so, became a great programmer.
+
+    </p>
+  </article>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
