@@ -1,0 +1,150 @@
+/* @media (max-width: 1280px) {
+
+  .jumbo {
+    height: 100%;
+    background-image: url("/img/jumbo-background-sm.svg");
+    background-size: cover;
+  }
+
+  #jumbo-title {
+    margin: 3rem 1rem;
+    padding: 1rem;
+    font-size: 6rem;
+  }
+
+  .menu-button-container,
+  .menu-links-container {
+    width: 25%;
+    margin: 1rem 0;
+    border: 8px solid var(--white3);
+    outline: 8px solid var(--main-color);
+  }
+}
+#modal-skills-text {
+  left: 20%;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+
+@media (max-width: 900px) {
+
+  #jumbo-title {
+    font-size: 4.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .jumbo-text {
+    font-size: 2rem;
+  }
+
+  .menu-container {
+    margin: 2rem 1rem;
+    height: 20rem;
+  }
+
+  .menu-container:hover {
+    border: none;
+    background-image: none;
+  }
+
+  .menu-button-modal {
+    font-size: 2rem;
+  }
+
+  #links-projects-title {
+    margin-top: 0;
+  }
+
+  .skill-link {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+  #modal-img-cv {
+    margin-top: .5rem;
+  }
+
+  #modal-skills-text {
+    left: 20%;
+    font-size: 1.5rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbo {
+    height: 20rem;
+    margin: .25rem 1.25rem;
+    background-image: url("/img/jumbo-background-smart.svg");
+    background-size: cover;
+  }
+
+  #jumbo-title {
+    margin: .15rem;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .jumbo-text-container {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .jumbo-text {
+    font-size: 1.25rem;
+  }
+
+  #professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button-container,
+  .menu-links-container {
+    width: 80%;
+    height: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .menu-button-modal {
+    font-size: 1.85rem;
+  }
+
+
+  #projects-selector {
+    height: fit-content;
+  }
+
+  #projects-links {
+    margin: 0 1rem 2.5rem 1rem;
+  }
+
+
+  .skill-link {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #modal-skills-text {
+    width: 85%;
+    left: 2.5%;
+    font-size: 1rem;
+    padding: .85rem;
+    
+  }
+
+  #modal-img-cv {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+} */
