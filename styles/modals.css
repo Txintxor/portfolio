@@ -1,0 +1,68 @@
+/* Modals */
+
+#modal-cv,
+#modal-skills {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#modal-img-cv {
+  border: solid 4px var(--white3);
+  max-height: 95%;
+  margin-top: 1.5rem;
+}
+
+#modal-skills-text {
+  position: relative;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: fit-content;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 2.5rem;
+  padding: 4rem;
+  border: solid 4px var(--white3);
+  background-color: var(--white2);
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  #modal-skills-text {
+    left: 20%;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 900px) {
+  #modal-img-cv {
+    margin-top: .5rem;
+  }
+
+  #modal-skills-text {
+    left: 20%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #modal-skills-text {
+    width: 85%;
+    left: 2.5%;
+    font-size: 1rem;
+    padding: .85rem;
+
+  }
+
+  #modal-img-cv {
+    width: 100%;
+    height: auto;
+  }
+
+}

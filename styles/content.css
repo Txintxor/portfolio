@@ -1,0 +1,155 @@
+.contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px var(--main-color);
+  padding: .5rem;
+}
+
+#professional-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Botones que activan los modals */
+.menu-button-container,
+.menu-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 13rem;
+  padding: 1rem;
+  background-color: var(--white2);
+  border: 8px solid var(--white3);
+  outline: 8px solid var(--main-color);
+  border-radius: 4px;
+  transition: all .4s;
+}
+
+.menu-links-container {
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.menu-button-container {
+  cursor: pointer;
+}
+
+.menu-button-container:hover,
+.menu-links-container:hover {
+  border: 10px solid var(--hov-color);
+  background-image: url("/img/jumbo-background-sm.svg");
+  background-size: cover;
+}
+
+.button-text {
+  padding: .5rem
+}
+
+/*Botones de activacion de los modals*/
+
+.menu-button-modal {
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.button-text {
+  text-align: center;
+  line-height: 2;
+}
+
+/*Contenedor de enlaces a proyectos*/
+
+#links-projects-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.link-li {
+  display: inline-block;
+  margin: 1rem 0 0 2rem;
+}
+
+.skill-link {
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 1280px) {
+
+  .menu-button-container,
+  .menu-links-container {
+    width: 25%;
+    margin: 1rem 0;
+    border: 8px solid var(--white3);
+    outline: 8px solid var(--main-color);
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-container {
+    margin: 2rem 1rem;
+    height: 20rem;
+  }
+
+  .menu-container:hover {
+    border: none;
+    background-image: none;
+  }
+
+  .menu-button-modal {
+    font-size: 2rem;
+  }
+
+  #links-projects-title {
+    margin-top: 0;
+  }
+
+  .skill-link {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button-container,
+  .menu-links-container {
+    width: 80%;
+    height: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .menu-button-modal {
+    font-size: 1.85rem;
+  }
+
+  #projects-selector {
+    height: fit-content;
+  }
+
+  #projects-links {
+    margin: 0 1rem 2.5rem 1rem;
+  }
+
+  .skill-link {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}

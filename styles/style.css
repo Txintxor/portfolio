@@ -1,83 +1,14 @@
 @import 'reset.css';
 @import 'variables.css';
-/* @import 'modals.css'; */
+@import 'header.css';
+@import 'content.css';
+@import 'modals.css';
+@import 'footer.css';
 
 
-/* Main Container */
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all .3s;
-}
 
 /* Secciones */
-/* Header */
-.navbar {
-  background: var(--main-color);
-  height: 2rem;
-  padding: .5rem;
-}
 
-.navbar-menu-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#main-language:hover,
-.navbar-icon:hover {
-  color: var(--white3);
-}
-
-#main-language {
-  font-size: 1.5rem;
-  color: var(--white2);
-  margin: 1rem;
-}
-.navbar-icon {
-  color: var(--white2);
-  font-size: 32px;
-  cursor: pointer;
-}
-
-/* Jumbo */
-.jumbo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0;
-  width: 100%;
-}
-
-.jumbo {
-  height: 23.5rem;
-  width: 88%;
-  border-radius: 4px;
-  margin: 2rem 4rem;
-  padding: .5rem;
-  background: cover;
-  background-image: url("/img/jumbo-background.svg");
-  -webkit-box-shadow: 5px 1px 10px 4px var(--main-color);
-  box-shadow: 5px 1px 4px 4px var(--main-color);
-}
-
-#jumbo-title {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-title);
-  font-size: 5rem;
-  color: var(--grey);
-  text-shadow: 6px 8px 4px var(--white2);
-  text-shadow: -3px 2px 2px var(--white2);
-}
-
-.jumbo-text {
-  padding: .5rem;
-  font-family: var(--font-title);
-  font-size: 3rem;
-}
 
 /* Main */
 .main-container {
@@ -86,153 +17,14 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
+  transition: all .3s;
 }
 
-.contents {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: solid 4px var(--main-color);
-  padding: .5rem;
-}
 
-#professional-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 
-/* Botones que activan los modals */
-.menu-button-container,
-.menu-links-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-  height: 13rem;
-  padding: 1rem;
-  background-color: var(--white2);
-  border: 8px solid var(--white3);
-  outline: 8px solid var(--main-color);
-  border-radius: 4px;
-  transition: all .4s;
-}
-
-.menu-links-container {
-  height: 100%;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--black);
-}
-
-.menu-button-container {
-  cursor: pointer;
-}
-
-.menu-button-container:hover,
-.menu-links-container:hover {
-  border: 10px solid var(--hov-color);
-  background-image: url("/img/jumbo-background-sm.svg");
-  background-size: cover;
-}
-
-.button-text {
-  padding: .5rem
-}
-
-/*Contenedor de enlaces a proyectos*/
-
-#links-projects-title {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.link-li {
-  display: inline-block;
-  margin: 1rem 0 0 2rem;
-}
-
-.skill-link {
-  margin: 2rem 0 0 0;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/*Botones de los modals*/
-
-.menu-button-modal {
-  font-family: var(--font);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--black);
-}
-
-.button-text {
-  text-align: center;
-  line-height: 2;
-}
-
-/* Modals */
-
-#modal-cv,
-#modal-skills {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-#modal-img-cv {
-  border: solid 4px var(--white3);
-  max-height: 95%;
-  margin-top: 1.5rem;
-}
-
-#modal-skills-text {
-  position: relative;
-  top: 10%;
-  left: 25%;
-  width: 50%;
-  height: fit-content;
-  font-size: 2rem;
-  text-align: left;
-  line-height: 2.5rem;
-  padding: 4rem;
-  border: solid 4px var(--white3);
-  background-color: var(--white2);
-
-}
-
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: auto;
-  background: var(--main-color);
-  /* margin-top: 4rem; */
-}
-
-.footer-text {
-  padding: .75rem;
-  font-size: 1.25rem;
-  color: var(--white2);
-  text-shadow: 6px 8px 4px var(--main-color);
-  text-shadow: -1px 1px 1px var(--grey);
-}
 
 /* Responsive */
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
 
   .jumbo {
     height: 100%;
@@ -265,7 +57,6 @@ footer {
   #jumbo-title {
     font-size: 4.25rem;
     margin-bottom: 1rem;
-    ;
   }
 
   .jumbo-text {
@@ -382,4 +173,4 @@ footer {
     position: relative;
     bottom: 0;
   }
-}
+} */

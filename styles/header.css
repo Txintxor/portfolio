@@ -1,0 +1,118 @@
+/* Header */
+.navbar {
+  background: var(--main-color);
+  height: 2rem;
+  padding: .5rem;
+}
+
+.navbar-menu-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#main-language:hover,
+.navbar-icon:hover {
+  color: var(--white3);
+}
+
+#main-language {
+  font-size: 1.5rem;
+  color: var(--white2);
+  margin: 1rem;
+}
+
+.navbar-icon {
+  color: var(--white2);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Jumbo */
+.jumbo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.jumbo {
+  height: 23.5rem;
+  width: 88%;
+  border-radius: 4px;
+  margin: 2rem 4rem;
+  padding: .5rem;
+  background: cover;
+  background-image: url("/img/jumbo-background.svg");
+  -webkit-box-shadow: 5px 1px 10px 4px var(--main-color);
+  box-shadow: 5px 1px 4px 4px var(--main-color);
+}
+
+#jumbo-title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-title);
+  font-size: 5rem;
+  color: var(--grey);
+  text-shadow: 6px 8px 4px var(--white2);
+  text-shadow: -3px 2px 2px var(--white2);
+}
+
+.jumbo-text {
+  padding: .5rem;
+  font-family: var(--font-title);
+  font-size: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+
+  .jumbo {
+    height: 100%;
+    background-image: url("/img/jumbo-background-sm.svg");
+    background-size: cover;
+  }
+
+  #jumbo-title {
+    margin: 3rem 1rem;
+    padding: 1rem;
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #jumbo-title {
+    font-size: 4.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .jumbo-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbo {
+    height: 20rem;
+    margin: .25rem 1.25rem;
+    background-image: url("/img/jumbo-background-smart.svg");
+    background-size: cover;
+  }
+
+  #jumbo-title {
+    margin: .15rem;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .jumbo-text-container {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .jumbo-text {
+    font-size: 1.25rem;
+  }
+}
