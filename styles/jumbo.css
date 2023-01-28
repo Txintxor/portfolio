@@ -1,49 +1,20 @@
-/* Header */
-.navbar {
-  background: var(--main-color);
-  height: 2rem;
-  padding: .5rem;
-}
-
-.navbar-menu-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#main-language:hover,
-.navbar-icon:hover {
-  color: var(--white3);
-}
-
-#main-language {
-  font-size: 1.5rem;
-  color: var(--white2);
-  margin: 1rem;
-}
-
-.navbar-icon {
-  color: var(--white2);
-  font-size: 32px;
-  cursor: pointer;
-}
-
 /* Jumbo */
 .jumbo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   margin: 2rem 0;
-  width: 100%;
+  width: 85%;
+  height: 100%;
 }
 
 .jumbo {
-  height: 23.5rem;
-  width: 88%;
+  height: 80%;
+  width: 85%;
   border-radius: 4px;
-  margin: 2rem 4rem;
   padding: .5rem;
+  margin-top: 5%;
   background: cover;
   background-image: url("/img/jumbo-background.svg");
   -webkit-box-shadow: 5px 1px 10px 4px var(--main-color);

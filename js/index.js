@@ -1,10 +1,10 @@
 // Constantes de los elementos del dom
 
-const modalCv = document.querySelector("#modal-cv");
-const modalSkills = document.querySelector("#modal-skills");
-const modalCvButton = document.querySelector("#modal-button-cv");
-const modalSkillsButton = document.querySelector("#modal-button-skills");
-const main = document.querySelector(".main-container");
+const modalCv = document.querySelector("#cv-modal");
+const modalSkills = document.querySelector("#skills-modal");
+const modalCvButton = document.querySelector("#modal-cv-button");
+const modalSkillsButton = document.querySelector("#modal-skills-button");
+const main = document.querySelector(".page-wrapper");
 const modal = document.querySelector(".modal");
 
 modalCvButton.addEventListener("click", () => {
@@ -27,5 +27,4 @@ modalCv.onclick = () => {
 modalSkills.onclick = () => {
   main.style.opacity = 1;
   modalSkills.style.display = "none";
-  console.log("hola");
 };

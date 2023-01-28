@@ -1,0 +1,91 @@
+
+/*Barra lateral*/
+
+.side-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  border: solid 5px red;
+}
+
+/* Botones que activan los modals y links */
+.side-menu-li {
+  position: relative;
+  top: 25%;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: all .4s;
+}
+
+.menu-button-container:hover {
+  border: 10px solid var(--hov-color);
+}
+
+/*Botones de side menu*/
+
+.side-menu-button{
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 700;  
+  text-align: center;
+  line-height: 2;
+  color: var(--black);
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+
+  .side-menu-container {
+    width: 25%;
+    margin: 1rem 0;
+    border: 8px solid var(--white3);
+    outline: 8px solid var(--main-color);
+  }
+}
+
+@media (max-width: 900px) {
+  .side-menu-container {
+   display: none;
+  }
+
+
+  .side-menu-butto{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-menu-container {
+    width: 80%;
+    height: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .side-menu-button
+  {
+    font-size: 1.85rem;
+  }
+
+  #projects-selector {
+    height: fit-content;
+  }
+
+  #projects-links {
+    margin: 0 1rem 2.5rem 1rem;
+  }
+
+  .skill-link {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}

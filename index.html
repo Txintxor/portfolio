@@ -8,34 +8,25 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title>Alex Quintilla Portfolio</title>
   <script src="https://kit.fontawesome.com/49b1fa1b69.js" crossorigin="anonymous" async></script>
-
-
 </head>
 
 <body>
-  <div class="main-container">
-    <!-- Cabecera -->
+  <div class="page-wrapper">
+    <!-- Barra de navegación -->
     <header class="header-container">
-      <!-- Barra de navegación -->
       <nav class="navbar">
         <ul class="navbar-menu-links">
-          <li class="navbar-list"><a class="navbar-link navbar-icon main-language" id="lang-target" href="./IndexEng.html">Engl</a></li>
-          <li class="navbar-list"><a class="navbar-link navbar-icon main-language" id="lang-using" href="./Index.html">Cast</a></li>
-          <li class="navbar-list">
-            <a href="mailto: alexqv@gmail.com" id="main-contact" class="navbar-link">
-              <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
-            </a>
+          <li class="navbar-list"><a class="navbar-link navbar-icon nav-language" id="lang-link"
+              href="./IndexEng.html">Engl</a></li>
+          <li class="navbar-list"><p class="navbar-link navbar-icon nav-language" id="lang-used"
+              href="./Index.html">Cast</p></li>
 
-          </li>
-          <li class="navbar-list">
-            <a href="https://www.linkedin.com/in/alex-quintilla/" class="navbar-link" target="_blank">
-              <i class="fa-brands fa-linkedin navbar-icon"></i>
-            </a>
-          </li>
         </ul>
       </nav>
+    </header>
+    <main class="content">
       <!-- Panel Jumbo -->
-      <div class="jumbo-container">
+      <article class="jumbo-container">
         <section class="jumbo">
           <p id="jumbo-title">
             Alex Quintillà Valle
@@ -60,70 +51,49 @@
             </ul>
           </article>
         </section>
-        <section class="invi"></section>
-      </div>
-    </header>
-    <!-- Contenedor de los botones para los modals -->
-    <main class="content">
-      <!-- Botones de los modals -->
-      <section class="contents-menu" id="professional-container"> <!-- CV -->
-        <article class="menu-button-container menu-container" id="cv-selector">
-          <button class="menu-button-modal" id="modal-button-cv">
-            Curriculum
-          </button>
-        </article>
-
-        <!-- Skills -->
-        <article class="menu-button-container menu-container" id="skills-selector">
-          <button class="menu-button-modal" id="modal-button-skills">
-            Sobre mí
-          </button>
-        </article>
-
-        <!-- Proyectos -->
-        <article class="menu-links-container menu-container" id="projects-selector">
-          <p class="title" id="links-projects-title">Enlaces</p>
-          <article class="link-container" id="projects-links">
-            <ul class="link-list-container">
-              <li class="link-li">
-                <a href="https://github.com/Txintxor" target="_blank" class="skill-link">
-                  GitHub
-                </a>
-              </li>
-              <li class="link-li"><a href="https://rosber-beta.vercel.app/Login" target="_blank" class="skill-link">
-                  WebApp de gestión de operativa de cocina
-                </a>
-              </li>
-              <li class="link-li"><a href="https://www.linkedin.com/in/alex-quintilla/" target="_blank"
-                  class="skill-link">
-                  Linkedin
-                </a>
-              </li>
-            </ul>
+      </article>
+      <!-- Barra lateral -->
+      <aside class="side-menu-container">
+        <ul class="side-menu-list">
+          <li class="side-menu-li" id="cv-selector">
+            <button class="side-menu-button" id="modal-cv-button">
+              Curriculum
+            </button>
+          </li>
+          <li class="side-menu-li" id="skills-selector">
+            <button class="side-menu-button" id="modal-skills-button">
+              Sobre mí
+            </button>
+          </li>
+          <li class="side-menu-li" id="projects-selector">
+            <button class="side-menu-button" id="menu-projects-button">Enlaces</button>
+          </li>
+          <li class="side-menu-li" id="contact-li">
+            <button class="side-menu-button" id="menu-contact-button">Contacto</button>
+          </li>
           </article>
 
-        </article>
-      </section>
-
-
-      <!-- Footer -->
-      <footer>
-        <article class="footer-container">
-          <p class="footer-text">Alex Quintillà Valle 2023</p>
-        </article>
-      </footer>
+        </ul>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <article class="footer-container">
+        <p class="footer-text">Alex Quintillà Valle 2023</p>
+      </article>
+    </footer>
   </div>
-  </main>
 
   <!-- Modals -->
   <!-- CV -->
-  <article class="modal" id="modal-cv">
+  <article class="modal" id="cv-modal">
     <img id="modal-img-cv" alt="CV-image" src="./img/AlexQuintillaValleCV2023.jpg">
   </article>
   <!-- Skills -->
-  <article class="modal" id="modal-skills">
+  <article class="modal" id="skills-modal">
     <p id="modal-skills-text">
-      Soy Alex Quintillà, cocinero profesional con más de 20 años de experiencia y actualmente estoy redirigiendo mi carrera
+      Soy Alex Quintillà, cocinero profesional con más de 20 años de experiencia y actualmente estoy redirigiendo mi
+      carrera
       hacia la programación en general y el desarrollo web en particular.
       <br>
       En mis años en la cocina he adquirido una serie de valores como la disciplina, la resiliencia y una mente abierta
@@ -135,9 +105,38 @@
       <br>
       Estoy empezando mi nueva carrera con gran entusiasmo y estoy trabajando para adquirir los conocimientos necesarios
       para convertirme en un buen programador.
-
     </p>
   </article>
+  <!-- Menu de enlances -->
+  <article class="modal" id="links-modal">
+    <ul class="ul-links-modal">
+      <li class="link-li">
+        <a href="https://github.com/Txintxor" target="_blank" class="skill-link">
+          GitHub
+        </a>
+      </li>
+      <li class="link-li"><a href="https://rosber-beta.vercel.app/Login" target="_blank" class="skill-link">
+          WebApp de gestión de operativa de cocina
+        </a>
+      </li>
+    </ul>
+  </article>
+  <!-- Menu de contacto -->
+  <article class="modal" id="contact-modal">
+    <ul class="ul-contact-modal" id="modal-contact">
+      <li class="navbar-list">
+        <a href="mailto: alexqv@gmail.com" id="main-contact" class="navbar-link">
+          <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navbar-list">
+        <a href="https://www.linkedin.com/in/alex-quintilla/" class="navbar-link" target="_blank">
+          <i class="fa-brands fa-linkedin navbar-icon"></i>
+        </a>
+      </li>
+    </ul>
+  </article>
+
   <script src="/js/index.js"></script>
 </body>
 
