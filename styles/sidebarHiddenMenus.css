@@ -1,0 +1,42 @@
+.side-menu-li {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden-menu-container {
+  position: absolute;
+  display: none;
+  border: 2px solid var(--main-color);
+  border-left: 0;
+  border-radius: 3px;
+}
+
+#links-menu-container {
+  top: 30%;
+  left: 102%;
+  width: 110%;
+}
+
+#contact-menu-container {
+  /* display: none; */
+  top: 35%;
+  left: 102%;
+}
+
+#contact-menu-container,
+#links-menu-container {
+
+}
+
+.li-hidden {
+  border: solid 1px var(--main-color);
+  font-size: 1.25rem;
+
+  padding: .5rem;
+}
+
+.hidden-link {
+  display: flex;
+  flex-direction: row;
+}
+

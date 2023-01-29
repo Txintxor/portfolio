@@ -1,7 +1,8 @@
 @import 'reset.css';
 @import 'navBar.css';
 @import 'jumbo.css';
-@import 'lateralMenu.css';
+@import 'sideBar.css';
+@import 'sidebarHiddenMenus.css';
 @import 'modals.css';
 @import 'footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
