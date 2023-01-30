@@ -18,7 +18,8 @@ contactButton.addEventListener("mouseover", () => {
 
 
 
-container.addEventListener("mouseout", () => {
+//Para hacer desaparecer los menus
+linksButton.addEventListener("mouseout", () => {
   linksMenu.style.display = "none";
 });
 
