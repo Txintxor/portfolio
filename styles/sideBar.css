@@ -5,8 +5,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  height: 80%;
   width: 10%;
+  margin-left: 2%;
   border: solid 3px var(--main-color);
 }
 
