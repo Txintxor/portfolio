@@ -3,6 +3,7 @@
   background: var(--main-color);
   height: 2rem;
   padding-bottom: 1rem;
+  max-width: 100%;
 }
 
 .navbar-menu-links {
