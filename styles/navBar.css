@@ -17,7 +17,7 @@
   font-size: 1rem;
   margin: 1rem;
   color: var(--white3);
-  cursor:default
+  cursor: default
 }
 
 #lang-link {
@@ -28,9 +28,3 @@
 #lang-link:hover {
   color: var(--hov-color);
 }
-
-
-
-
-
-
