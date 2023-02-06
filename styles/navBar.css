@@ -13,6 +13,10 @@
   justify-content: flex-end;
 }
 
+.navbar-menu-links {
+  width: 100%;
+}
+
 #lang-used {
   font-size: 1rem;
   margin: 1rem;
@@ -27,4 +31,39 @@
 
 #lang-link:hover {
   color: var(--hov-color);
+
+
+}
+@media (max-width: 768px) {
+  .navbar {
+    background: var(--main-color);
+    height: 2rem;
+    padding-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .navbar-menu-links {
+    width: 100%;
+  }
+
+  .navbar-menu-links {
+    width: 100%;
+    margin: 0;
+  }
+
+  .open-responsive-menu-button{
+    position: absolute;
+    top: .9%;
+    left: 2%;
+    border: solid 1px yellow;
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  .fa-bars {
+    border: solir 1px rebeccapurple;
+    color: var(--white3);
+    margin: 0;
+    font-size: 2rem;
+  }
 }
