@@ -1,22 +1,28 @@
 /*Barra lateral*/
-
+.open-responsive-menu-button{
+  display: none;
+}
 .side-menu-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
   height: 90%;
-  width: fit-content;
+  width: 15%;
   margin-left: 3%;
   border: solid 3px var(--main-color);
-
+  
 }
 
-/* Botones que activan los modals y links */
+/* Botones de la sidebar */
 .side-menu-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0 1rem 4rem 1rem;
   border-radius: 4px;
-  transition: all .8s;
+  transition: all 0.3s;
 }
 
 
@@ -31,9 +37,18 @@
   color: var(--black);
 }
 
+/* Hover de los menus escondidos */
+#links-menu-button:hover .li-hidden-links {
+  opacity: 1;
+}
+
+#contact-li:hover .li-hidden-contact {
+  opacity: 1;
+}
+
 /* Responsive */
 
-@media (max-width: 1280px) {
+@media (max-width: 1380px) {
   .side-menu-container {
     display: flex;
     flex-direction: row;
@@ -41,7 +56,7 @@
     align-items: center;
     height: 30%;
     width: 90%;
-    margin: auto;
+    margin-top: -2rem;
     border: none;
   }
 
@@ -50,32 +65,125 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: space-around;
-    flex-grow: 0;
     width: 100%;
     max-height: 4rem;
     padding-bottom: 0.2rem;
     border: 10px solid var(--hov-color);
   }
 
+
+  .side-menu-li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
   #links-li {
-    /* position: absolute; */
     width: 15%;
   }
 }
 
 @media (max-width: 768px) {
+
+  /* Checkbox que abre el menu responsive */
+  .open-responsive-menu-button {
+    position: fixed;
+    top: 5px;
+    left: 6px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 6;
+  }
+
+  /* Decoración checkbox */
+  .responsive-menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 5px;
+    border-radius: 4px;
+    background: var(--white3);
+    z-index: 4;
+    transition: all .5s;
+  }
+
+  .responsive-menu-button:nth-child(2) {
+    top: 20px;
+    transform-origin: 0% 0%;
+  }
+
+  .responsive-menu-button:nth-child(3) {
+    top: 30px;
+    transform-origin: 0% 0%;
+  }
+
+  /* Abrir y cerrar menu */
+  .open-responsive-menu-button:checked~.side-menu-list {
+    opacity: 1;
+    z-index: 3;
+    transform: translate(0%, -1%);
+  }
+
+  /* Animación de la decoración del checkbox */
+  .open-responsive-menu-button:checked~.responsive-menu-button {
+    opacity: 0;
+    transform: rotate(0);
+  }
+
+  .open-responsive-menu-button:checked~.responsive-menu-button:nth-child(2) {
+    opacity: 1;
+    transform: rotate(45deg) translate(-7px, -8px);
+  }
+
+  .open-responsive-menu-button:checked~.responsive-menu-button:nth-last-child(3) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-2px, -1px);
+  }
+
+  /* Contenedor del menu */
   .side-menu-container {
-    display: flex;
+    /* display: none; usado con JS*/
+    position: fixed;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    height: 100%;
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 85%;
+    border: none;
+  }
+
+  .side-menu-list {
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    transform: translate(-110%, -1%);
+    width: 90%;
+    min-height: 90%;
+    padding-bottom: 0.2rem;
+    background-color: var(--white3);
+    border: 10px solid var(--main-color);
+    z-index: -1;
+    opacity: 0;
+  }
+
+
+
+  .side-menu-li {
+    flex-direction: column;
+    align-items: center;
   }
 
   .side-menu-button {
-    font-size: 1.85rem;
+    font-size: 1.25rem;
   }
 
   #links-li {
@@ -90,4 +198,5 @@
     margin-bottom: 1rem;
     font-size: 1.25rem;
   }
+
 }

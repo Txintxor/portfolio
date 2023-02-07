@@ -54,6 +54,11 @@
 }
 
 @media (max-width: 900px) {
+  .jumbo {
+    margin-top: -3rem;
+    background-image: url("/img/jumbo-background-smart.svg");
+    background-size: cover;
+  }
 
   #jumbo-title {
     font-size: 4.25rem;
@@ -67,10 +72,8 @@
 
 @media (max-width: 768px) {
   .jumbo {
-    height: 20rem;
+    height: 30rem;
     margin: .25rem 1.25rem;
-    background-image: url("/img/jumbo-background-smart.svg");
-    background-size: cover;
   }
 
   #jumbo-title {

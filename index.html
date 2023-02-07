@@ -16,6 +16,12 @@
     <header class="header-container">
       <nav class="navbar">
         <ul class="navbar-menu-links">
+          <li class="navbar-button">
+            <!-- Para JS -->
+            <!-- <button class="open-responsive-menu-button">
+              <i class="fa-solid fa-bars"></i>
+            </button> -->
+          </li>
           <li class="navbar-list"><a class="navbar-link navbar-icon nav-language" id="lang-link"
               href="./IndexEng.html">Engl</a></li>
           <li class="navbar-list">
@@ -55,6 +61,12 @@
       </article>
       <!-- Barra lateral -->
       <aside class="side-menu-container">
+        
+            <!-- Boton que abre el menu para smartphone CSS -->
+            <input type="checkbox" class="open-responsive-menu-button" />
+            <span class="responsive-menu-button"></span>
+            <span class="responsive-menu-button"></span>
+            <span class="responsive-menu-button"></span>
         <!-- CV -->
         <ul class="side-menu-list">
           <li class="side-menu-li" id="cv-selector">
@@ -69,9 +81,9 @@
             </button>
           </li>
 
-          <!-- Links a proyectos -->
+          <!-- Contenedor enlances a proyectos -->
           <li class="side-menu-li pop-li" id="links-li">
-            <button class="side-menu-button" id="links-menu-button">Enlaces</button>
+            <button  class="side-menu-button" id="links-menu-button">Enlaces</button>
 
             <!-- Menu de enlances -->
             <ul class="hidden-menu-container" id="links-menu-container">
@@ -94,7 +106,7 @@
 
             <!-- Menu de contacto -->
             <ul class="hidden-menu-container" id="contact-menu-container">
-              <li class="li-hidden li-hidden-contact" id="contact-first">
+              <li class="li-hidden li-hidden-contact" >
                 <a href="mailto: alexqv@gmail.com" id="main-contact" class="hidden-a">
                   <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
                   <p class="link-text">E-mail</p>
@@ -108,7 +120,7 @@
               </li>
             </ul>
           </li>
-
+        </ul>
       </aside>
     </main>
     <!-- Footer -->
@@ -143,7 +155,7 @@
     </p>
   </article>
   <script src="/js/modals.js"></script>
-  <!-- <script src="/js/sidebar.js"></script> -->
+  <script src="/js/sidebar.js"></script>
 </body>
 
 </html>
