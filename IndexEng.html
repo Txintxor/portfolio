@@ -8,31 +8,32 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title>Alex Quintilla Portfolio</title>
   <script src="https://kit.fontawesome.com/49b1fa1b69.js" crossorigin="anonymous" async></script>
-
-
 </head>
 
 <body>
-  <div class="main-container">
-    <!-- Cabecera -->
+  <div class="page-wrapper">
+    <!-- Barra de navegación -->
     <header class="header-container">
-      <!-- Barra de navegación -->
       <nav class="navbar">
         <ul class="navbar-menu-links">
-          <li class="navbar-list"><a id="main-language" class="navbar-link" href="./">Home</a></li>
-          <li class="navbar-list">
-            <a href="mailto: alexqv@gmail.com" id="main-contact" class="navbar-link"></a>
-            <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
+          <li class="navbar-button">
+            <!-- Para JS -->
+            <!-- <button class="open-responsive-menu-button">
+              <i class="fa-solid fa-bars"></i>
+            </button> -->
           </li>
+          <li class="navbar-list"><a class="navbar-link navbar-icon nav-language" id="lang-link"
+              href="./Index.html">Cast</a></li>
           <li class="navbar-list">
-            <a href="https://www.linkedin.com/in/alex-quintilla/" target="_blank">
-              <i class="fa-brands fa-linkedin navbar-icon"></i>
-            </a>
+            <p class="navbar-link navbar-icon nav-language" id="lang-used" href="./Index.html">Eng</p>
           </li>
+
         </ul>
       </nav>
+    </header>
+    <main class="content">
       <!-- Panel Jumbo -->
-      <div class="jumbo-container">
+      <article class="jumbo-container">
         <section class="jumbo">
           <p id="jumbo-title">
             Alex Quintillà Valle
@@ -57,86 +58,105 @@
             </ul>
           </article>
         </section>
-        <section class="invi"></section>
-      </div>
-    </header>
-    <!-- Contenedor de los botones para los modals -->
-    <main class="content">
-      <!-- Botones de los modals -->
-      <section class="contents-menu" id="professional-container"> <!-- CV -->
-        <article class="menu-button-container menu-container" id="cv-selector">
-          <button class="menu-button-modal" id="modal-button-cv">
-            Curriculum
-          </button>
-        </article>
+      </article>
+      <!-- Barra lateral -->
+      <aside class="side-menu-container">
 
-        <!-- Skills -->
-        <article class="menu-button-container menu-container" id="skills-selector">
-          <button class="menu-button-modal" id="modal-button-skills">
-            About me
-          </button>
-        </article>
+        <!-- Boton que abre el menu para smartphone CSS -->
+        <input type="checkbox" class="open-responsive-menu-button" />
+        <span class="responsive-menu-button"></span>
+        <span class="responsive-menu-button"></span>
+        <span class="responsive-menu-button"></span>
+        <!-- CV -->
+        <ul class="side-menu-list">
+          <li class="side-menu-li" id="cv-selector">
+            <button class="side-menu-button" id="modal-cv-button">
+              Curriculum Vitae
+            </button>
+          </li>
+          <!-- About me -->
+          <li class="side-menu-li" id="skills-selector">
+            <button class="side-menu-button" id="modal-skills-button">
+              About me
+            </button>
+          </li>
 
-        <!-- Proyectos -->
-        <article class="menu-links-container menu-container" id="projects-selector">
-          <p class="title" id="links-projects-title">Links</p>
-          <article class="link-container" id="projects-links">
-            <ul class="link-list-container">
-              <li class="link-li">
-                <a href="https://github.com/Txintxor" target="_blank" class="skill-link">
+          <!-- Contenedor enlances a proyectos -->
+          <li class="side-menu-li pop-li" id="links-li">
+            <button class="side-menu-button" id="links-menu-button">Links</button>
+
+            <!-- Menu de enlances -->
+            <ul class="hidden-menu-container" id="links-menu-container">
+              <li class="li-hidden li-hidden-links">
+                <a href="https://github.com/Txintxor" target="_blank" class="hidden-a">
                   GitHub
                 </a>
               </li>
-              <li class="link-li"><a href="https://rosber-beta.vercel.app/Login" target="_blank" class="skill-link">
-                  Kitchen manager WebApp
-                </a>
-              </li>
-              <li class="link-li"><a href="https://www.linkedin.com/in/alex-quintilla/" target="_blank"
-                  class="skill-link">
-                  Linkedin
+              <li class="li-hidden li-hidden-links">
+                <a href="https://rosber-beta.vercel.app/Login" target="_blank" class="hidden-a">
+                  Kitchen manager React WebApp
                 </a>
               </li>
             </ul>
-          </article>
+          </li>
 
-        </article>
-      </section>
+          <!-- Contacto -->
+          <li class="side-menu-li pop-li" id="contact-li">
+            <button class="side-menu-button" id="contact-menu-button">Contact</button>
 
-
-      <!-- Footer -->
-      <footer>
-        <article class="footer-container">
-          <p class="footer-text">Alex Quintillà Valle 2023</p>
-        </article>
-      </footer>
+            <!-- Menu de contacto -->
+            <ul class="hidden-menu-container" id="contact-menu-container">
+              <li class="li-hidden li-hidden-contact">
+                <a href="mailto: alexqv@gmail.com" id="main-contact" class="hidden-a">
+                  <i class="fa fa-envelope navbar-icon" aria-hidden="true"></i>
+                  <p class="link-text">E-mail</p>
+                </a>
+              </li>
+              <li class="li-hidden li-hidden-contact">
+                <a href="https://www.linkedin.com/in/alex-quintilla/" class="hidden-a" target="_blank">
+                  <i class="fa-brands fa-linkedin navbar-icon"></i>
+                  <p class="link-text">Linkedin</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <article class="footer-container">
+        <p class="footer-text">Alex Quintillà Valle 2023</p>
+      </article>
+    </footer>
   </div>
-  </main>
 
   <!-- Modals -->
   <!-- CV -->
-  <article class="modal" id="modal-cv">
+  <article class="modal" id="cv-modal">
     <img id="modal-img-cv" alt="CV-image" src="./img/AlexQuintillaValleCV2023English.jpg">
   </article>
   <!-- Skills -->
-  <article class="modal" id="modal-skills">
+  <article class="modal" id="skills-modal">
     <p id="modal-skills-text">
       My name is Alex Quintilla, a 20 year experienced professional chef who is starting a new career
       in programming and in front end developing in particular.
       <br>
-      From my long career as professional chef I got a lot of strengths as discipline, resilience and 
+      From my long career as professional chef I got a lot of strengths as discipline, resilience and
       an open mind to embrace changes and new knowledges.
       <br>
-      I´m self-taught in HTML, CSS, Javascript, TypeScript, frameworks as Bootstrap y SASS, Git and npm, etc...  
+      I´m self-taught in HTML, CSS, Javascript, TypeScript, frameworks as Bootstrap y SASS, Git and npm, etc...
       then, thanks to IT Academy from Barcelona Activa, I´ve learned that ReactJS is a powerfull tool not
       only for front end but also to create unique apps as the Kitchen operative manager I´m developing
       nowadays.
       <br>
-      I´m starting my new career with great enthusiasm and I´m working hard to build a strong 
+      I´m starting my new career with great enthusiasm and I´m working hard to build a strong
       knowledge of the computing languages, frameworks and libraries and in so, became a great programmer.
 
     </p>
   </article>
-  <script src="/js/index.js"></script>
+  <script src="/js/modals.js"></script>
+  <script src="/js/sidebar.js"></script>
 </body>
 
 </html>
