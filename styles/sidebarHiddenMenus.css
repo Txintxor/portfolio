@@ -1,7 +1,16 @@
 .hidden-menu-container {
-  position: absolute;
   border: 0;
+  opacity: 0;
+  height: 0;
+  margin: auto;
+  overflow: hidden;
+  height: 0;
   z-index: -10;
+}
+
+#links-menu-container,
+#contact-menu-container {
+  transition: all .4s linear;
 }
 
 .li-hidden {
@@ -11,55 +20,76 @@
   border-left: 0;
   font-size: 1.25rem;
   padding: .5rem;
-  opacity: 0;
-  transition: all .4s linear;
 }
-
 
 .hidden-a {
   display: flex;
   flex-direction: row;
 }
 
-#links-li:hover .li-hidden-links {
+#links-li:hover #links-menu-container {
   opacity: 1;
-  /* border: 2px solid var(--main-color); */
+  height: 120px;
+  z-index: 5;
 }
 
-#contact-li:hover .li-hidden-contact {
+#contact-li:hover #contact-menu-container {
   opacity: 1;
-  /* border: 2px solid var(--main-color); */
-  border-radius: 3px;
+  height: 100px;
+  z-index: 5;
 }
 
-.pop-li:hover .hidden-menu-container {
-  z-index: 1;
-}
-
-#links-menu-container {
-  top: 51%;
-  left: 13%;
-}
-
-#contact-menu-container {
-  top: 65%;
-  left: 13%;
-}
 
 /* Responsive */
-@media (max-width: 1280px) {
-
+@media (max-width: 1380px) {
   .hidden-menu-container {
-    position: static;
-    transform: translateY(5%);
     border: solid 4px var(--hov-color);
     border-top: none;
     margin-top: 5%;
     background: var(--white2);
+    overflow: visible;
+    padding-top: 0.75rem;
+    opacity: 1;
   }
 
   #links-menu-container {
     width: 200%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hidden-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  #links-menu-container {
+    position: relative;
+    left: -30%;
+    min-width: 15rem;
+    display: none;
+  }
+
+  #contact-menu-container {
+    display: none;
+  }
+
+  .side-menu-li {
+    position: fixed;
+    width: auto;
+  }
+
+  #cv-selector {
+    top: 20%;
+  }
+
+  #skills-selector {
+    top: 35%;
   }
 }
 
@@ -92,6 +122,10 @@
   }
 
   #links-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
     top: 48%;
   }
 
