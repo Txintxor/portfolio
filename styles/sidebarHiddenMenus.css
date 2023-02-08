@@ -41,12 +41,14 @@
 
 
 /* Responsive */
-@media (max-width: 1380px) {
+@media (max-width: 1280px) {
   .hidden-menu-container {
-    border: solid 4px var(--hov-color);
-    border-top: none;
-    margin-top: 5%;
-    background: var(--white2);
+    /* border: solid 6px var(--hov-color); */
+    border-left: 1px solid var(--hov-color);
+    -webkit-box-shadow: 2px 2px 2px 1px var(--main-color);
+    box-shadow: 2px 2px 2px 1px var(--main-color);
+    border-radius: 4px;
+    background: var(--grey);
     overflow: visible;
     padding-top: 0.75rem;
     opacity: 1;
@@ -64,7 +66,10 @@
     flex-direction: column;
     align-items: flex-start;
     background: none;
-    border: none;
+    border: solid 1px var(--hov-color);
+    border-top: none;
+    -webkit-box-shadow: none;
+    box-shadow: none(--main-color);
     padding: 0;
   }
 

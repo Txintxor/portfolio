@@ -7,14 +7,16 @@
 @import 'footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
 
+
 :root {
-  --main-color: #1B2845;
-  --hov-color: #2f4679;
-  --black: #000004;
-  --grey: #212124;
-  --white: #e3e4e6;
-  --white2: #dde1eb;
-  --white3: #aabde6;
+
+  --main-color: #325D48;
+  --hov-color: #396A52;
+  --black: #070E0A;
+  --grey: #0E1B15;
+  --white: #F2F8F5;
+  --white2: #95C6AE;
+  --white3: #88BFA4;
   --font-title: 'Roboto Condensed', sans-serif;
   --font: 'Roboto Flex', sans-serif;
 }
@@ -39,9 +41,10 @@ main {
   width: 100%;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1200px) {
   .content {
     flex-direction: column-reverse;
+    justify-content: space-between;
   }
 }
 

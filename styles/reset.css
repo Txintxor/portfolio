@@ -38,7 +38,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: var(--white);
+  background: var(--black);
 }
 
 ol, ul {
@@ -75,13 +75,13 @@ a:hover {
 
 i {
   margin: 0 1rem;
-  color: var(--main-color);
+  color: var(--white3);
 }
 
 a,
 p {
   font-family: var(--font);
-  color: var(--black);
+  color: var(--white3);
 }
 
 button {

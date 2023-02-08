@@ -1,8 +1,8 @@
 /* Header */
 .navbar {
-  background: var(--main-color);
+  background: var(--grey);
   height: 2rem;
-  padding:0 2rem 1rem 0;
+  padding: 0 2rem 1rem 0;
   max-width: 100%;
 }
 
@@ -11,17 +11,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  
-}
-
-.navbar-menu-links {
   width: 100%;
 }
 
 #lang-used {
   font-size: 1rem;
-  margin: 1rem;
-  color: var(--white3);
+  margin: 1rem 1rem 1rem 1rem;
+  color: var(--main-color);
   cursor: default
 }
 
@@ -35,9 +31,9 @@
 
 
 }
+
 @media (max-width: 768px) {
   .navbar {
-    background: var(--main-color);
     height: 2rem;
     padding-bottom: 1rem;
     max-width: 100%;
@@ -52,17 +48,16 @@
     margin: 0;
   }
 
-  .open-responsive-menu-button{
+  .open-responsive-menu-button {
     position: absolute;
     top: .9%;
     left: 2%;
-    border: solid 1px yellow;
     width: fit-content;
     height: fit-content;
-    
+
   }
+
   .fa-bars {
-    border: solir 1px rebeccapurple;
     color: var(--white3);
     margin: 0;
     font-size: 2rem;

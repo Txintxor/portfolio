@@ -8,11 +8,11 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   width: auto;
-  background: var(--main-color);
+  background: var(--grey);
 }
 
 .footer-text {
   padding: .75rem;
-  font-size: 1.25rem;
-  color: var(--white2);
+  font-size: 1.5rem;
+  color: var(--white3);
 }

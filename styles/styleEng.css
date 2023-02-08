@@ -1,0 +1,9 @@
+/* Responsive  menu bar fix */
+
+@media (max-width: 1280px) {
+  .side-menu-button {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+}
+
