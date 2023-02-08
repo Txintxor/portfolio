@@ -69,9 +69,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 30%;
+    height: fit-content;
     width: 90%;
-    margin-top: -2rem;
+    margin-top: 2rem;
     background: none;
     border: none;
     -webkit-box-shadow: none;
