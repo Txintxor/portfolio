@@ -2,14 +2,9 @@
 
 @media (max-width: 1280px) {
   .side-menu-button {
-  font-size: 1.75rem;
-  margin-top: .5rem;
-}
-/* .hidden-menu-container {
-  margin-top: 0;
-} */
- 
-
+    font-size: 1.75rem;
+    margin-top: .5rem;
+  }
 }
 
 

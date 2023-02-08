@@ -14,15 +14,21 @@
   background-color: var(--grey);
   -webkit-box-shadow: 4px 6px 5px 1px var(--main-color);
   box-shadow: 4px 6px 5px 1px var(--main-color);
+}
 
+.side-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
 }
 
 /* Contenedor de botones de la sidebar */
 .side-menu-li {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0 1rem 4rem 1rem;
+  align-items: center;
+  padding: 0 1rem;
   border-radius: 4px;
   transition: all 0.3s;
 }

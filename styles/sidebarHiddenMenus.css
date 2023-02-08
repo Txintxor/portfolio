@@ -2,7 +2,7 @@
   border: 0;
   opacity: 0;
   height: 0;
-  margin: auto;
+  margin: 0;
   overflow: hidden;
   height: 0;
   z-index: -10;
@@ -11,6 +11,7 @@
 #links-menu-container,
 #contact-menu-container {
   transition: all .4s linear;
+  
 }
 
 .li-hidden {
@@ -25,12 +26,14 @@
 .hidden-a {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 #links-li:hover #links-menu-container {
   opacity: 1;
   height: 120px;
   z-index: 5;
+  width: fit-content;
 }
 
 #contact-li:hover #contact-menu-container {
