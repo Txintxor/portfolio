@@ -20,7 +20,8 @@
 }
 
 #modal-img-cv {
-  border: solid 4px var(--white3);
+  border: solid 4px var(--hov-color);
+  border-radius: 4px;
   max-height: 95%;
   margin-top: 1.5rem;
 }
@@ -37,8 +38,9 @@
   text-align: left;
   line-height: 2.5rem;
   padding: 4rem;
-  border: solid 4px var(--white3);
-  background-color: var(--white2);
+  border: solid 4px var(--hov-color);
+  border-radius: 4px;
+  background-color: var(--grey);
 }
 
 
