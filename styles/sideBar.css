@@ -12,6 +12,7 @@
   border-top: 1px solid var(--hov-color);
   border-radius: 4px;
   background-color: var(--grey);
+  background: var(--sidebar-background);
   -webkit-box-shadow: 4px 6px 5px 1px var(--main-color);
   box-shadow: 4px 6px 5px 1px var(--main-color);
 }
@@ -182,7 +183,7 @@
     justify-content: center;
     margin: 0;
     width: 100%;
-    height: 85%;    
+    height: 85%;
     border: none;
   }
 
@@ -200,6 +201,7 @@
     opacity: 0;
     padding-bottom: 0.2rem;
     background-color: var(--grey);
+    background: var(--sidebar-background-smart);
     border: 4px solid var(--main-color);
     -webkit-box-shadow: none;
     box-shadow: none;

@@ -53,11 +53,17 @@
     background: var(--grey);
     overflow: visible;
     padding-top: 0.75rem;
+    padding-left: 0.75rem;
     opacity: 1;
   }
 
+  /* Font awesome icons  */
+  .fa-brands,
+  .fa-envelope {
+    margin-left: 0;
+  }
   #links-menu-container {
-    width: 200%;
+    min-width: 220%;
   }
 }
 
@@ -79,7 +85,6 @@
   #links-menu-container {
     position: relative;
     left: 30%;
-    min-width: 15rem;
     display: none;
   }
 
@@ -106,6 +111,10 @@
   .hidden-menu-container {
     background: none;
     border: none;
+  }
+
+  .side-menu-list {
+    min-height: 95%;
   }
 
   #links-menu-container {
@@ -147,6 +156,10 @@
   }
 
   .hidden-a {
-    font-size: 1rem
+    font-size: 1.15rem
+  }
+  .side-menu-button {
+    font-size: 1.5rem;
+    margin-top: .5rem;
   }
 }

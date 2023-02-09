@@ -16,7 +16,7 @@
   padding: .5rem;
   margin-top: 5%;
   background-color: var(--grey);
-  background: var(--background);
+  background: var(--jumbo-background);
   border-left: 1px solid var(--hov-color);
   border-top: 1px solid var(--hov-color);
   border-radius: 4px;
@@ -71,15 +71,15 @@
 
 @media (max-width: 1280px) {
 
-  .jumbo {
+.jumbo {
     height: 85%;
     /* background-size: cover; */
   }
 
   #jumbo-title {
-    top: 6rem;
-    left: 1rem;
-    font-size: 4rem;
+    top: 4rem;
+    left: .5rem;
+    font-size: 4.5rem;
   }
 
   .jumbo-text-container {
@@ -98,8 +98,9 @@
   }
 
   #jumbo-text-title {
-    font-size: 3rem;
-  }
+    margin: 2rem 0 1rem 0;
+    font-size: 4rem;
+  } 
 }
 
 @media (max-width: 768px) {

@@ -19,7 +19,9 @@
   --white3: #88BFA4;
   --font-title: 'Roboto Condensed', sans-serif;
   --font: 'Roboto Flex', sans-serif;
-  --background: url("../img/background.svg");
+  --jumbo-background: url("../img/jumbo-background.svg");
+  --sidebar-background: url("../img/sidebar-background.svg");
+  --sidebar-background-smart: url("../img/sidebar-background-smart.svg");
 }
 
 main {
