@@ -16,6 +16,7 @@
   padding: .5rem;
   margin-top: 5%;
   background-color: var(--grey);
+  background: var(--background);
   border-left: 1px solid var(--hov-color);
   border-top: 1px solid var(--hov-color);
   border-radius: 4px;
@@ -72,10 +73,11 @@
 
   .jumbo {
     height: 85%;
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   #jumbo-title {
+    top: 6rem;
     left: 1rem;
     font-size: 4rem;
   }
