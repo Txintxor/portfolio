@@ -11,7 +11,7 @@
 #links-menu-container,
 #contact-menu-container {
   transition: all .4s linear;
-  
+
 }
 
 .li-hidden {
@@ -73,12 +73,13 @@
     border-top: none;
     -webkit-box-shadow: none;
     box-shadow: none(--main-color);
+    margin-top: 1rem;
     padding: 0;
   }
 
   #links-menu-container {
     position: relative;
-    left: -30%;
+    left: 30%;
     min-width: 15rem;
     display: none;
   }
@@ -109,8 +110,12 @@
   }
 
   #links-menu-container {
-    min-width: 15rem;
+    min-width: 10rem;
+    max-height: fit-content;
     display: none;
+    margin-top: 0;
+    top: 0;
+    left: 0;
   }
 
   #contact-menu-container {
@@ -140,5 +145,9 @@
   #contact-li {
     top: 63%;
     transition: none;
+  }
+
+  .hidden-a {
+    font-size: 1rem
   }
 }

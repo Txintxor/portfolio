@@ -90,7 +90,7 @@
     justify-content: space-around;
     align-items: space-around;
     width: 100%;
-    max-height: 4rem;
+    max-height: 5.5rem;
     padding-bottom: 0.2rem;
     border-left: 1px solid var(--hov-color);
     border-top: 1px solid var(--hov-color);
