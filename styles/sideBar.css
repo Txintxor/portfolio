@@ -176,15 +176,13 @@
 
   /* Contenedor del menu */
   .side-menu-container {
-    /* display: none; usado con JS*/
     position: fixed;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
     width: 100%;
-    height: 85%;
-    
+    height: 85%;    
     border: none;
   }
 
@@ -205,10 +203,7 @@
     border: 4px solid var(--main-color);
     -webkit-box-shadow: none;
     box-shadow: none;
-
   }
-
-
 
   .side-menu-li {
     flex-direction: column;
