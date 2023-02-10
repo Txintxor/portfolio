@@ -31,7 +31,7 @@ linksButton.addEventListener("mouseout", () => {
 //Activa y desactiva el menu desplegable de contacto
 contactButton.addEventListener("mouseover", () => {
   if (width.matches) {
-    contactMenu.style.display = "block";
+    set(contactMenu.style.display = "block", 300)
   }
 });
 
@@ -41,80 +41,3 @@ contactButton.addEventListener("mouseout", () => {
   }
 });
 
-// Botones de activación y desactivacion de menus sin transición
-
-// const on = document.querySelector(".open-responsive-menu-button");
-// let check = false;
-
-// on.addEventListener("click", () => {
-//   if ((!check)) {
-//     // container.style.z-index = "3";
-//     container.style.transform = "translateY(0)";
-//     container.style.opacity = "1";
-//     check = true;
-//   } else {
-//     // container.style.display = "none";
-//     container.style.transform = "translateY(-110%)";
-//     container.style.opacity = "0";
-//     check = false;
-//   }
-// });
-
-// Para hacer aparecer los menus de enlaces y contacto sin transición
-
-// linksButton.addEventListener("mouseover", () => {
-
-//   linksMenu.style.display = "block";
-// });
-
-// contactButton.addEventListener("mouseover", () => {
-//   contactMenu.style.display = "block";
-// });
-
-//Para hacer desaparecer los menus
-
-// linksButton.addEventListener("mouseout", () => {
-//   linksMenu.style.display = "none";
-// });
-// contactButton.addEventListener("mouseout", () => {
-//   contactMenu.style.display = "none";
-// });
-
-// Botones de activación y desactivacion de menus sin transición
-
-// const on = document.querySelector(".open-responsive-menu-button");
-// let check = false;
-
-// on.addEventListener("click", () => {
-//   if ((!check)) {
-//     // container.style.z-index = "3";
-//     container.style.transform = "translateY(0)";
-//     container.style.opacity = "1";
-//     check = true;
-//   } else {
-//     // container.style.display = "none";
-//     container.style.transform = "translateY(-110%)";
-//     container.style.opacity = "0";
-//     check = false;
-//   }
-// });
-
-// Para hacer aparecer los menus de enlaces y contacto sin transición
-
-// linksButton.addEventListener("mouseover", () => {
-
-//   linksMenu.style.display = "block";
-// });
-
-// contactButton.addEventListener("mouseover", () => {
-//   contactMenu.style.display = "block";
-// });
-
-//Para hacer desaparecer los menus
-
-// linksButton.addEventListener("mouseout", () => {
-//   linksMenu.style.display = "none";
-// });
-// contactButton.addEventListener("mouseout", () => {
-//   contactMenu.style.display = "none";
-// });

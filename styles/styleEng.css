@@ -1,4 +1,11 @@
 /* Responsive  menu bar fix */
+#lang-used {
+  margin: 0;
+}
+
+#lang-link {
+  margin-right: 1rem;
+}
 
 @media (max-width: 1280px) {
   .side-menu-button {

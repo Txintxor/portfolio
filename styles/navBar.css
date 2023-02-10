@@ -2,7 +2,7 @@
 .navbar {
   background: var(--grey);
   height: 2rem;
-  padding: 0 2rem 1rem 0;
+  padding: 1rem 2rem 0.5rem 0;
   max-width: 100%;
 }
 
@@ -15,15 +15,15 @@
 }
 
 #lang-used {
-  font-size: 1rem;
-  margin: 1rem 1rem 1rem 1rem;
-  color: var(--main-color);
+  font-size: 1.5rem;
+  margin-right: 1rem; 
+  color: var(--white3);
   cursor: default
 }
 
 #lang-link {
   font-size: 1.5rem;
-  color: var(--white2);
+  color: var(--white);
 }
 
 #lang-link:hover {
