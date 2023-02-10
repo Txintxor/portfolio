@@ -9,6 +9,11 @@ const linksButton = document.querySelector("#links-li");
 // Sidebar contact
 const contactMenu = document.querySelector("#contact-menu-container");
 const contactButton = document.querySelector("#contact-li");
+
+//Tags a del menú de contactos
+const aTagContact = document.querySelector(".contact-a");
+
+//Variable que controla el ancho de la pantalla
 const width = window.matchMedia("(max-width: 768px");
 
 //Event listeners
@@ -17,7 +22,7 @@ const width = window.matchMedia("(max-width: 768px");
 linksButton.addEventListener("mouseover", () => {
   if (width.matches) {
     linksMenu.style.display = "block";
-    contactButton.style.transform = "translateY(95%)";
+    contactButton.style.transform = "translateY(150%)";
   }
 });
 
@@ -29,15 +34,20 @@ linksButton.addEventListener("mouseout", () => {
 });
 
 //Activa y desactiva el menu desplegable de contacto
-contactButton.addEventListener("mouseover", () => {
-  if (width.matches) {
-    set(contactMenu.style.display = "block", 300)
-  }
-});
 
+if (width.matches) {
+  contactButton.addEventListener("mouseover", () => {
+    contactMenu.style.display = "block";
+    contactMenu.style.marginTop = "0";
+    contactMenu.addEventListener(
+      "transitionend",
+      () => (contactMenu.style.transform = "translateY(0%)")
+    );
+  });
+}
 contactButton.addEventListener("mouseout", () => {
   if (width.matches) {
+    contactMenu.style.marginTop = "50rem";
     contactMenu.style.display = "none";
   }
 });
-
